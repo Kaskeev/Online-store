@@ -33,6 +33,9 @@ body{
     padding: 0 15px;
     margin: 0 auto;
 }
+.page-section{
+    margin-bottom: 80px;
+}
 .header__top-inner {
     display: flex;
     justify-content: space-between;
@@ -303,4 +306,114 @@ body{
     color: #1C62CD;
     font-size: 18px;
     line-height: 22px;
+}
+/* SEARCH */
+.search {
+}
+.container {
+}
+.search__inner {
+}
+.search__tabs {
+    margin-bottom: 26px;
+}
+.search__tabs-item {
+    padding: 11px 26px 12px;
+}
+.search__tabs-item--active{
+    background: #F0F0F4;
+    border-radius: 5px;
+    font-weight: 700;
+}
+.search__content {
+}
+.search__content-item {
+    display: none;
+}
+.search__content-item--active{
+    display: block;
+}
+.search__content-form {
+    display: flex;
+}
+.search__content-input {
+    padding: 15px 20px;
+    background: #F0F0F4;
+    border-radius: 3px;
+    border: none;
+    font-size: 16px;
+    line-height: 19px;
+    width: 100%;
+}
+.search__content-input::placeholder{
+    color: #656464;
+}
+.search__content-btn {
+    border: none;
+    padding: 17px 41px;
+    background: #1C62CD;
+    border-radius: 3px;
+    font-weight: bold;
+    font-size: 14px;
+    line-height: 17px;
+    letter-spacing: 0.12em;
+    text-transform: uppercase;
+    color: #FFFFFF;
+    margin-left: -3px;
+}
+/* categories */
+.categories__inner {
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+}
+.categories__item {
+    background: #FFFFFF;
+    border-radius: 3px;
+    margin-bottom: 30px;
+    display: flex;
+    width: 370px;
+    min-height: 130px;
+    transition: 0.3s;
+}
+.categories__item:hover .categories__item-title{
+    color: #1C62CD;
+}
+.categories__item:hover{
+    background: #FFFFFF;
+    box-shadow: 3px 3px 20px rgba(50, 50, 50, 0.25);
+}
+.categories__item-info {
+    width: 50%;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    padding: 20px 13px 14px 20px;
+}
+.categories__item-title {
+    transition: .5s;
+    font-weight: bold;
+    font-size: 23px;
+    line-height: 28px;
+    color: #2F3035;
+    width: 160px;
+    word-wrap: break-word; 
+}
+.categories__text {
+    font-weight: normal;
+    font-size: 14px;
+    line-height: 17px;
+    color: #C4C4C4;
+}
+.categories__text::after{
+    content: url("../images/link-arrow.svg");
+    padding-left: 3px;
+}
+.categories__item-img {
+    text-align: center;
+    width: 50%;
+    margin-top: 20px;
+}
+.categories__item-img img{
+   max-width: 100%;
 }
